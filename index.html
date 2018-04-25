@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+
+	<meta http-equiv=”Refresh” content=”0;URL=https://localhost:3000”>
+	<link rel="canonical" href="https://localhost:3000" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+	<link rel="manifest" href="/manifest.json">
+
+	<!-- icon in the highest resolution we need it for -->
+	<link rel="icon" sizes="192x192" href="img/restaurant-logo-192x192.png">
+
+	<!-- reuse same icon for Safari -->
+	<link rel="apple-touch-icon" href="img/restaurant-logo-250x250@2x.png">
+	<link rel="apple-touch-startup-image" href="img/restaurant-logo-250x250@2x.png">
+
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#4285f4">
+
+	<link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.css" />
+	<!-- <link rel="stylesheet" href="css/allStyles.css"> -->
+	<!-- optimize perfomance: use inline css style -->
+	<style>
+	body,td,th,p{font-family:Arial, Helvetica, sans-serif;font-size:1rem;line-height:140%}body{background-color:#cccccc;margin:0;position:relative}ul,li{font-family:Arial, Helvetica, sans-serif;font-size:1rem}a{color:orange;text-decoration:none}a:hover,a:focus{color:#3397db;text-decoration:none}a img{border:none 0px #fff}h1,h2,h3,h4,h5,h6{font-family:Arial, Helvetica, sans-serif;margin:0 0 20px;padding:1.6rem 0;line-height:140%}article,aside,canvas,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}#maincontent{background-color:#f3f3f3;min-height:100%}#footer{background-color:black;color:#dfdfdf;font-size:0.8rem;letter-spacing:1px;padding:25px;text-align:center;text-transform:uppercase}nav{width:100%;height:110px;background-color:#000d34;text-align:center}nav h1{margin:auto}nav h1 a{color:#fff;font-size:1.6rem;font-weight:600;letter-spacing:10px;text-transform:uppercase;padding:1rem}#breadcrumb{padding:10px 40px 16px;list-style:none;background-color:#e0e0e0;font-size:1rem;margin:0}#breadcrumb li{display:inline}#breadcrumb li+li:before{padding:8px;color:black;content:"/\00a0"}#breadcrumb li a{color:#0275d8;text-decoration:none}#breadcrumb li a:hover{color:#01447e;text-decoration:underline}#map{height:400px;width:100%;background-color:#ccc}.filter-options{width:100%;background-color:#032a96;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.filter-options h2{color:white;font-size:1.8rem;font-weight:600;line-height:1;text-align:center;padding:1.5rem 0}.filter-options h3{font-size:2rem}.filter-options select{background-color:white;border:1px solid #fff;font-family:Arial, sans-serif;font-size:1rem;height:40px;letter-spacing:0;margin:0 0.4rem 20px;padding:0 10px;width:95%;border-radius:2px}#restaurants-list{background-color:#f3f3f3;list-style:outside none none;margin:0;padding:30px 15px 60px;text-align:center}#restaurants-list li{background-color:#fff;border:2px solid #ccc;font-family:Arial, sans-serif;margin:15px;min-height:380px;padding:0 30px 25px;text-align:left;border-radius:4px}#restaurants-list .restaurant-img{background-color:#ccc;display:block;margin:1.5rem 0 0;max-width:100%}#restaurants-list li h1{color:#f18200;font-family:Arial, sans-serif;font-size:1.6rem;font-weight:600;letter-spacing:0;line-height:1.3;margin:0.5rem 0 0;text-transform:uppercase}#restaurants-list p{margin:0;font-size:1rem}#restaurants-list li a{background-color:#011f72;color:#fff;display:inline-block;font-size:1rem;margin:16px 0 0;padding:12px 0 12px;text-align:center;text-decoration:none;text-transform:uppercase;border-radius:4px}.inside #map-container{background:blue none repeat scroll 0 0;right:0;top:80px}.inside #map{background-color:#ccc}.inside #footer{bottom:0}#restaurant-name{color:#f18200;font-family:Arial, sans-serif;font-size:1.4rem;font-weight:600;margin:15px 0 30px;text-transform:uppercase;line-height:1.1;text-align:center}#restaurant-img{max-width:100%}#restaurant-address{font-size:1rem;margin:10px 0px}#restaurant-cuisine{background-color:#333;color:#fff;font-size:1rem;font-weight:300;letter-spacing:10px;margin:0 0 20px;padding:10px 0;text-align:center;text-transform:uppercase}#restaurant-container,#reviews-container{border-bottom:1px solid #d9d9d9;border-top:1px solid #fff;padding:0 1rem}#reviews-container{padding:1rem}#reviews-container h2{color:#f58500;font-size:2rem;font-weight:300;letter-spacing:-1px;padding-bottom:1pt;text-align:center}#reviews-list{margin:0;padding:0}#reviews-list li{background-color:#fff;border:2px solid #8e8e8e;display:block;list-style-type:none;margin:0 6px 20px;overflow:hidden;padding:0 1.3rem;position:relative;border-radius:1rem 0 1rem}#reviews-list li p{margin:1.2rem 1rem}#reviews-list li section{display:inline-block;padding:0.8rem 1rem;width:95%;font-size:1rem;font-weight:600;border-bottom:1px solid}#reviews-list li section div:nth-child(1){float:left;text-transform:uppercase}#reviews-list li section div:nth-child(2){float:right}#reviews-list li p:first-of-type{background-color:orange;border-bottom:3px solid #eee;color:#fff;font-size:1rem;padding:3px 12px;text-decoration:none;text-transform:uppercase;width:-webkit-fit-content;width:-moz-fit-content;width:fit-content}.skip-link{position:absolute;top:-40px;left:0;background:#01447e;color:white;padding:0.5rem}.skip-link:focus{top:0;z-index:1000}select:focus{outline:black solid 1px}#restaurants-list li a:hover,#restaurants-list li a:focus{background-color:#7c4400;color:white}
+
+	.container-body,.container-header,.container-main,.container-rest{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}.container-body>*,.container-header>*,.container-main>*{-webkit-box-flex:1;-ms-flex:1 100%;flex:1 100%}.rest-header{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}.rest-main{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}.rest-footer{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}.rest-nav{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}.rest-breadcrump{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}.rest-map{-webkit-box-ordinal-group:2;-ms-flex-order:1;order:1}.rest-details{-webkit-box-ordinal-group:3;-ms-flex-order:2;order:2}.rest-reviews{-webkit-box-ordinal-group:4;-ms-flex-order:3;order:3}@media all and (max-width: 30rem){#restaurants-list li a{width:100%}}@media all and (min-width: 30rem){nav h1 a{font-size:2rem}#restaurants-list li a{padding:12px 24px 12px}.filter-options,.rest-details,.rest-reviews{max-width:480px;margin:auto}.filter-options select{width:calc(100%/2 - 1rem)}#reviews-list li section{font-size:1.2rem}#restaurant-name{font-size:2rem}}@media all and (min-width: 48rem){.filter-options,.rest-details,.rest-reviews{max-width:600px;margin:auto}}@media all and (min-width: 60rem){li,.container-main{max-width:960px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-ms-flex-line-pack:justify;align-content:space-between}#restaurants-list .restaurant-img{max-width:84%}.column{margin:30px;-webkit-box-flex:1;-ms-flex-positive:1;flex-grow:1;-ms-flex-negative:1;flex-shrink:1;-ms-flex-preferred-size:0;flex-basis:0}.align-top{-ms-flex-item-align:start;align-self:flex-start}.column:first-of-type{-webkit-box-flex:2;-ms-flex-positive:2;flex-grow:2;-ms-flex-negative:2;flex-shrink:2;-ms-flex-preferred-size:0;flex-basis:0}div.column h2{text-align:left}.filter-options,.rest-details,.rest-reviews{max-width:960px;margin:auto}.container-body,.container-header,.container-main,.container-rest{-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:left;-ms-flex-pack:left;justify-content:left}}@media all and (min-width: 75rem){li,.container-main{max-width:1200px;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex}}
+	</style>
+	<title>Restaurant Reviews</title>
+</head>
+
+<body>
+	<!-- skip link -->
+	<div>
+		<a href="#neighborhoods-select" class="skip-link">Skip to Filter Results</a>
+	</div>
+
+	<div class="wrapper">
+		<header class="header">
+			<nav>
+				<h1>
+					<a href="/">Restaurant Reviews</a>
+				</h1>
+			</nav>
+		</header>
+
+		<main id="maincontent">
+			<section>
+				<div id="notifications"></div>
+			</section>
+			<section class="filter-options">
+				<div id="filter-options">
+					<h2>Filter Results</h2>
+					<select id="neighborhoods-select" name="select neighborhoods" title="select neighborhoods" onchange="updateRestaurants()">
+						<option value="all">All Neighborhoods</option>
+					</select>
+					<select id="cuisines-select" name="select cuisines" title="select cuisines" onchange="updateRestaurants()">
+						<option value="all">All Cuisines</option>
+					</select>
+				</div>
+				<ul id="restaurants-list"></ul>
+			</section>
+			<section  id="map-container" class="map" aria-label="restaurant map" role="application">
+		<div>
+		</div>
+		<div id="map">
+				<!-- static map, will be replaced async with live map -->
+				<img width="600" src="img/image-placeholder.png"
+					alt="Google Map of Albany, NY">
+				</div>
+			</section>
+		</main>
+	</div>
+<button id="loadMap">load map</button>
+<button id="updateRest">Update Restaurants</button>
+
+
+<-- <script charset="utf-8" src="js/dbhelper.js"></script> -->
+<-- <script charset="utf-8" src="js/main.js"></script> -->
+<script>
+	// custom lazy load
+	// disable async script above 
+	// enable function lazyLoadMap
+	lazyLoadMap()
+
+</script>	
+	<footer id="footer" class="footer">
+		Copyright (c) 2017
+		<a href="/">
+			<strong>Restaurant Reviews</strong>
+		</a> All Rights Reserved.
+	</footer>
+	
+</body>
+
+</html>

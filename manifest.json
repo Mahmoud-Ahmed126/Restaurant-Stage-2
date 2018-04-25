@@ -1,0 +1,47 @@
+{
+    "short_name": "Restaurants",
+    "name": "Restaurant Reviews, Udacity MWS Course, by SZoupi",
+    "start_url": "/?utm_source=homescreen",
+    "description": "The best Restaurant Reviews in town, by szoupi.",
+    "lang": "en-US",
+    "display": "standalone",
+    "background_color": "blue",
+    "theme_color": "#2196F3",
+    "categories": [
+        "restaurant",
+        "reviews"
+    ],
+    
+    "icons": [
+        {
+            "src": "img/restaurant-logo-48x48.png",
+            "type": "image/png",
+            "sizes": "48x48"
+        },
+        {
+            "src": "img/restaurant-logo-96x96.png",
+            "type": "image/png",
+            "sizes": "96x96"
+        },
+        {
+            "src": "img/restaurant-logo-144x144.png",
+            "type": "image/png",
+            "sizes": "144x144"
+        },
+        {
+            "src": "img/restaurant-logo-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        },
+        {
+            "src": "img/restaurant-logo-512x512.png",
+            "type": "image/png",
+            "sizes": "512x512"
+        },
+        {
+            "src": "img/restaurant-logo-250x250@2x.png",
+            "type": "image/png",
+            "sizes": "250x250"
+        }
+    ]
+}

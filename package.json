@@ -1,0 +1,45 @@
+{
+  "name": "mws-restaurant-stage-1",
+  "version": "1.0.0",
+  "description": "mws udacity course",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/szoupi/mws-project-1.git"
+  },
+  "author": "szoupi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/szoupi/mws-project-1/issues"
+  },
+  "homepage": "https://github.com/szoupi/mws-project-1#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babelify": "^8.0.0",
+    "browser-sync": "^2.23.6",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-clean-dest": "^0.2.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-jscs": "^4.1.0",
+    "gulp-minify": "^2.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-responsive": "^2.9.0",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webp": "^3.0.0"
+  },
+  "dependencies": {
+    "gulp-sass": "^4.0.0",
+    "gzip": "^0.1.0",
+    "idb": "^2.1.1",
+    "inline-css": "^2.4.0",
+    "node-minify": "^2.4.2",
+    "uglify-es": "^3.3.9",
+    "vinyl-buffer": "^1.0.1"
+  }
+}

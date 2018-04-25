@@ -1,0 +1,176 @@
+/* ====================== RESPONSIVE ====================== */
+
+.container-body,
+.container-header,
+.container-main,
+.container-rest {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/* We tell all items to be 100% width, via flex-basis */
+
+.container-body>*,
+.container-header>*,
+.container-main>* {
+	flex: 1 100%;
+}
+
+/* body flex items*/
+.rest-header { order: 1;}
+.rest-main { order: 2;}
+.rest-footer { order: 3;}
+
+/* header flex items*/
+.rest-nav { order: 1;}
+.rest-breadcrump { order: 2;}
+
+/* main flex items*/
+.rest-map { order: 1;}
+.rest-details { order: 2;}
+.rest-reviews { order: 3;}
+
+/* ==================== MEDIA QUERIES ===========*/
+
+/* SMALL phones < 480px */
+@media all and (max-width: 30rem) {
+	#restaurants-list li a {
+		width: 100%;
+	}
+}
+
+/* BIG phones 480px - 768px */
+@media all and (min-width: 30rem) {
+	nav h1 a {
+		font-size: 2rem;
+	}
+	/* INDEX PAGE ==================== */
+	#restaurants-list li a {
+		padding: 12px 24px 12px;
+	}
+	.filter-options,
+	.rest-details,
+	.rest-reviews {
+		max-width: 480px;
+		margin: auto;
+	}
+	.filter-options select {
+		width: calc(100%/2 - 1rem);
+	}
+	/* RESTAURANT PAGE =============== */
+	#reviews-list li section {
+		font-size: 1.2rem;
+	}
+	#restaurant-name {
+		font-size: 2rem;
+	}
+}
+
+/* TABLETS 768px - 960px */
+
+@media all and (min-width: 48rem) {
+	.filter-options,
+	.rest-details,
+	.rest-reviews {
+		max-width: 600px;
+		margin: auto;
+	}
+}
+
+/* MEDIUM size computer screens 960px - 1200px */
+
+@media all and (min-width: 60rem) {
+
+
+	li, .container-main {
+		max-width: 960px;
+		margin: 0 auto;
+		display: flex;
+		align-content: space-between;
+
+	}
+	
+	#restaurants-list .restaurant-img {
+		max-width: 84%;
+	}
+	.column {
+		margin: 30px;
+		flex-grow: 1;
+		flex-shrink: 1;
+		flex-basis: 0;
+	}
+
+	.align-top {
+		align-self: flex-start;
+	}
+
+
+	
+
+	.column:first-of-type {
+		flex-grow: 2;
+		flex-shrink: 2;
+		flex-basis: 0;
+	}
+
+	div.column h2 {
+		text-align: left;
+	}
+
+	/* body width */
+	.filter-options,
+	.rest-details,
+	.rest-reviews {
+		max-width: 960px;
+		margin: auto;
+	}
+
+	.container-body,
+	.container-header,
+	.container-main,
+	.container-rest {
+		flex-direction: row;
+		justify-content: left;
+	}
+
+}
+
+/* LARGE computer screens > 1200px */
+@media all and (min-width: 75rem) {
+	li,
+	.container-main {
+		max-width: 1200px;
+		margin: 0 auto;
+		display: flex;
+	}
+}
+	
+
+/* FLEX ITEMS */
+
+/* INDEX PAGE */
+
+/* DOM
+header
+  nav
+main
+  map
+  filter
+  restaurants-list
+	container-rest
+	container-details
+footer */
+
+/* RESTAURANT PAGE */
+
+/* DOM
+header
+  nav
+  breadcrump
+main
+  map
+  section restaurant
+  section review
+footer */
